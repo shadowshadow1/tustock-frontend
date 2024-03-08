@@ -36,20 +36,20 @@ const App = () => {
               <Route path="/aggregators" element="Aggregators" />
               <Route path='/farmers' element='Farmers' />
               <Route path="/lands" element="Lands" />
-              <Route path="/chats" element="Chat" />
+              <Route path="/chats" element="Chats" />
 
               {/* Pages */}
               <Route path='/' element='LandingPage' />
               <Route path="/oderbook" element="OrderBook" />
-              <Route path='/charts' element="Chart" />
+              <Route path='/charts' element="Charts" />
               <Route path='/features' element="Features" />
 
               {/* Aggregator dashboard */}
-              <Route path='/aggregatorDash' element='AggregatorDash' />
+              <Route path='/aggregatorHome' element='AggregatorHome' />
               <Route path='/farmers' element='Farmers' />
               <Route path="/lands" element="Lands" />
               <Route path='/projects' element='Projects' />
-              <Route path="/chats" element="Chat" />
+              <Route path="/chats" element="Chats" />
               
               {/* Investors */}
               <Route path='/investor' element='HomePage' />
