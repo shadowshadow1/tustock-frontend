@@ -36,6 +36,7 @@ const App = () => {
               <Route path="/aggregators" element="Aggregators" />
               <Route path='/farmers' element='Farmers' />
               <Route path="/lands" element="Lands" />
+              <Route path="/landlease" element="LandLease" />
               <Route path="/chats" element="Chats" />
 
               {/* Pages */}
