@@ -1,3 +1,8 @@
+.main {
+  display: flex;
+  position: relative;
+}
+
 .sidebar {
   width: 72rem;
   position: fixed;
