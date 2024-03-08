@@ -16,7 +16,6 @@ export { default as AggregatorLandLease } from './admin/LandLease';
 export { default as Projects } from './aggregator/Projects';
 export { default as AggregatorChats } from './aggregator/Chats';
 
-
 // Investor exports
 export { default as HomePage } from './investor/HomePage';
 export { default as Projects } from './investor/Projects';
@@ -26,17 +25,17 @@ export { default as InvestorLandLease } from './investor/LandLease';
 export { default as InvestorChats } from './investor/Chats';
 
 // Pages exports
-export { default as } from './pages';
-export { default as } from './pages';
-export { default as } from './pages';
-export { default as } from './pages';
+export { default as LandingPage } from './pages/LandingPage';
+export { default as OrderBook } from './pages/OrderBook';
+export { default as Charts } from './pages/Charts';
+export { default as Features } from './pages/Features';
 
 // Others
-export { default as } from '.';
-export { default as } from '.';
-export { default as } from '.';
-export { default as } from '.';
-export { default as } from '.';
-export { default as } from '.';
-export { default as } from '.';
-export { default as } from '.';
+export { default as Button } from './Button';
+export { default as Footer } from './Footer';
+export { default as Header } from './Header';
+export { default as Navbar} from './Navbar';
+export { default as NavChat } from './NavChat';
+export { default as Notification } from './Notification';
+export { default as Sidebar } from './Sidebar';
+export { default as UserProfile } from './UserProfile';
