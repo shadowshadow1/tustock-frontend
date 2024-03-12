@@ -14,68 +14,50 @@ import { Button, Footer, Header, Navbar, NavChat, Notification, Sidebar, UserPro
 import './App.css';
 
 const App = () => {
-  const activeMenu=true;
+ 
   return (
     <div>
       <BrowserRouter>
-        <div className='main'>
-          {activeMenu ? (
-            <div className='sidebar' >
-              Sidebar
-            </div>
-          ): (
-            <div className='sidebar-hidden' >
-              Sidebar hidden
-            </div>
-          ) }
+      
+        <div>
+          <Routes>
+            {/* Admin dashboard */}
+            <Route path="/admindash" element={<Ecommerce />}/>
+            <Route path="/invetors" element={<Investors />}/>
+            <Route path="/projects" element={<AdminProjects />} />
+            <Route path="/aggregators" element={<Aggregators />} />
+            <Route path='/farmers' element={<Farmers />} />
+            <Route path="/lands" element={<Lands />} />
+            <Route path="/landlease" element={<AdminLandLease />} />
+            <Route path="/chats" element={<AdminChats />} />
 
-          <div className={`main-content ${activeMenu ? 'margin-left' : 'flex-2'}`}>
-              <div className='navbar'>
-                  Navbar
-              </div>
-          </div>
+            {/* Pages */}
+            <Route path='/' element={<LandingPage />} />
+            <Route path="/oderbook" element={<OrderBook />} />
+            <Route path='/charts' element={<Charts />} />
+            <Route path='/features' element={<Features />} />
 
+            {/* Aggregator dashboard */}
+            <Route path='/aggregatorHome' element={<AggregatorHome />} />
+            <Route path='/farmers' element={<AggregatorFarmers />} />
+            <Route path="/lands" element={<AggregatorLands />} />
+            <Route path='/projects' element={<AggregatorProjects />} />
+            <Route path="/chats" element={<AggregatorChats />} />
+            
+            {/* Investors */}
+            <Route path='/investor' element={<HomePage />} />
+            <Route path='/projects' element={<InvestorProjects />} />
+            <Route path='/investments' element={<Investments />} />
+            <Route path='/lands' element={<InvestorLands />} />
+            <Route path='/landlease' element={<InvestorLandLease />} />
+            <Route path='/chats' element={<InvestorChats />}/>
 
-
-          <div>
-            <Routes>
-             {/* Admin dashboard */}
-              <Route path="/admindash" element={<Ecommerce />}/>
-              <Route path="/invetors" element={<Investors />}/>
-              <Route path="/projects" element={<AdminProjects />} />
-              <Route path="/aggregators" element={<Aggregators />} />
-              <Route path='/farmers' element={<Farmers />} />
-              <Route path="/lands" element={<Lands />} />
-              <Route path="/landlease" element={<AdminLandLease />} />
-              <Route path="/chats" element={<AdminChats />} />
-
-              {/* Pages */}
-              <Route path='/' element={<LandingPage />} />
-              <Route path="/oderbook" element={<OrderBook />} />
-              <Route path='/charts' element={<Charts />} />
-              <Route path='/features' element={<Features />} />
-
-              {/* Aggregator dashboard */}
-              <Route path='/aggregatorHome' element={<AggregatorHome />} />
-              <Route path='/farmers' element={<AggregatorFarmers />} />
-              <Route path="/lands" element={<AggregatorLands />} />
-              <Route path='/projects' element={<AggregatorProjects />} />
-              <Route path="/chats" element={<AggregatorChats />} />
-              
-              {/* Investors */}
-              <Route path='/investor' element={<HomePage />} />
-              <Route path='/projects' element={<InvestorProjects />} />
-              <Route path='/investments' element={<Investments />} />
-              <Route path='/lands' element={<InvestorLands />} />
-              <Route path='/landlease' element={<InvestorLandLease />} />
-              <Route path='/chats' element={<InvestorChats />}/>
-
-            </Routes>
-          </div>
-
-
-
+          </Routes>
         </div>
+
+
+
+   
       </BrowserRouter>
     </div>
   )

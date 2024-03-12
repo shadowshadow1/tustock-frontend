@@ -1,0 +1,41 @@
+.main {
+    display: flex;
+    position: relative;
+}
+
+.sidebar {
+    width: 72rem;
+    position: fixed;
+    background-color: white;
+}
+
+.sidebar-hidden {
+    width: 0rem;
+}
+
+.main-content {
+    background-color: #f9fafb;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-content.margin-left {
+    margin-left: 18rem;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        position: static;
+    }
+}
+
+.flex-2 {
+    flex-grow: 2;
+}
+
+
