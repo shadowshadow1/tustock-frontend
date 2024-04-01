@@ -4,6 +4,7 @@ import NavBar from '@/Layouts/NavBar/NavBar'
 import News from '@/Layouts/News/News'
 import PopularStocks from '@/Layouts/PopularStocks/PopularStocks'
 import TradeFree from '@/Layouts/TradeFree/TradeFree'
+import Portfolio from '@/Layouts/Portfolio/Portfolio'
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
     <News/>
     <PopularStocks/>
     <TradeFree/>
+    <Portfolio/>
 
     </>
   )
