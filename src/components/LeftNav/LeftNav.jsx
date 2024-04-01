@@ -12,7 +12,6 @@ const LeftNav = ({ derivatives, orderBook, features, institutional, earn, charts
       <div className={styles.left_con}>
         <ul className={styles.orderList}>
           <li className={styles.logo}><Link href="/"><Logo href="/"/></Link></li>
-          <li className={styles.grid} ><Link href="/"><BsGrid3X3GapFill /></Link></li>
           <li className={styles.newdropdown}>
             <Link href="/"><div className={styles.sub}>Order Book</div><AiFillCaretDown className={styles.arrow_triangle} /></Link>
             <div className={styles.submenu}>

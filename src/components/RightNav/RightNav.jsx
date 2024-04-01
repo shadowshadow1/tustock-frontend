@@ -45,21 +45,18 @@ const openClose = (e) => {
     }
 }
 
-const RightNav = ({ derivatives, orderBook, features, institutional, earn, charts, finance }) => {
+const RightNav = ({orderBook, features, charts }) => {
     return (
         <div className={styles.right_side_wrap}>
-            <Link href="/" className={`${styles.register0} ${styles.button_effect}`}>Register</Link>
+            <Link href="/" className={`${styles.register0} ${styles.button_effect}`}>Sign Up</Link>
             <button className={`${styles.mobile_nav_toggle} mobile_nav_toggle`} aria-controls="right_side" aria-expanded="false" onClick={clickHandal}>
                 <span className={styles.sr_only }>Menu</span>
             </button>
             <nav className={`${styles.nav} nav`} id="nav" data-visible="false">
                 <ul  className={`${styles.right_side} right_side`}>
                     <li><Link href="/" className={`${styles.log_in} ${styles.button_effect}`}>Log In</Link></li>
-                    <li><Link href="/" className={`${styles.register} ${styles.button_effect}`}>Register</Link></li>
-                    <li className={styles.downloads}>Downloads</li>
-                    <li className={styles.language}>English</li>
-                    <li className={styles.currency}>| USD |</li>
-                    <li className={styles.AdjustLogo}><AdjustLogo/></li>
+                    <li><Link href="/" className={`${styles.register} ${styles.button_effect}`}>Sign Up</Link></li>
+                    {/* <li className={styles.AdjustLogo}><AdjustLogo/></li> */}
                     <li id="li-1" className={`${styles.drop_hamburger} drop_hamburger`} onClick={e => openClose(e)}>
                         <Link href="/"><TargetFinance className={`${styles.tragetfinance} ${styles.ham_icon}`} /><div>Order Book</div><AiFillCaretDown className={styles.arrow_triangle} /></Link>
                         <div className={`${styles.submenu} submenu`}>
@@ -92,7 +89,7 @@ const RightNav = ({ derivatives, orderBook, features, institutional, earn, chart
                     <li id="li-9" className={`${styles.drop_hamburger} ${styles.drop_last} drop_hamburger`} >
                         <Link href="/"><TargetFinance className={`${styles.tragetfinance} ${styles.ham_icon}`} /><div>Feed</div></Link>
                     </li>
-                    
+
                 </ul>
             </nav>
         </div>
