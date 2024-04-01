@@ -8,7 +8,6 @@ import PaperFinance from '../../../public/PaperFinance';
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
 
-
 const charts = [
     { titel: "World Markets", desc: "The easiest way to trade", iconFirst: <PaperFinance className={styles.paperfinance} />, iconArrow: <AiOutlineArrowRight className={styles.arrowright} /> },
     { titel: "Risk Matrix", desc: "Weigh the risk options first before making a move", iconFirst: <PaperFinance className={styles.paperfinance} />, iconArrow: <AiOutlineArrowRight className={styles.arrowright} /> },
@@ -173,6 +172,8 @@ const NavBar = () => {
           charts={charts} orderBook={orderBook} features={features}
           finance={finance} institutional={institutional} earn={earn}
         />
+
+
       </div>
     );
 }
