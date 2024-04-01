@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-yellow: #f0b90b;
+    --primary-black: #1E2329;
+    --secondery-yellow: #c99400;
+    --primary-gray: #EAECEF;
+    --secondery-gray: #75787b;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62.5% */
+  }
+  
+  body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  ul{
+    list-style: none;
+  }
+  
+  @media (max-width: 480px) {
+    html{
+      font-size: 50%;
+    }
+  }
