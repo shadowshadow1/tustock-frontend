@@ -1,4 +1,6 @@
 import LeftNav from "@/components/LeftNav/LeftNav";
+import RightNav from "@/components/RightNav/RightNav";
+
 import styles from "./NavBar.module.css";
 import FlagFinance from '../../../public/FlagFinance';
 import TargetFinance from '../../../public/TargetFinance';
@@ -165,6 +167,11 @@ const NavBar = () => {
           finance={finance} institutional={institutional} earn={earn}
           renderDropDown_4_8={renderDropDown_4_8} renderDropDown={renderDropDown} renderDropDown_0_5={renderDropDown_0_5}
           renderDropDown_5_10={renderDropDown_5_10} renderDropDown_0_6={renderDropDown_0_6} renderDropDown_6_12={renderDropDown_6_12}
+        />
+
+        <RightNav derivatives={derivatives}
+          charts={charts} orderBook={orderBook} features={features}
+          finance={finance} institutional={institutional} earn={earn}
         />
       </div>
     );
