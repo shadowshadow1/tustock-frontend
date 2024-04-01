@@ -9,8 +9,8 @@ import Link from "next/link";
 
 const charts = [
     { titel: "World Markets", desc: "The easiest way to trade", iconFirst: <PaperFinance className={styles.paperfinance} />, iconArrow: <AiOutlineArrowRight className={styles.arrowright} /> },
-    { titel: "Risk Matrix", desc: "Trade crypto with advanced tools", iconFirst: <PaperFinance className={styles.paperfinance} />, iconArrow: <AiOutlineArrowRight className={styles.arrowright} /> },
-    { titel: "Contributing Factors", desc: "increase your profits leverage", iconFirst: <PaperFinance className={styles.paperfinance} />, iconArrow: <AiOutlineArrowRight className={styles.arrowright} /> },
+    { titel: "Risk Matrix", desc: "Weigh the risk options first before making a move", iconFirst: <PaperFinance className={styles.paperfinance} />, iconArrow: <AiOutlineArrowRight className={styles.arrowright} /> },
+    { titel: "Contributing Factors", desc: "Some behind the scenes factors to consider", iconFirst: <PaperFinance className={styles.paperfinance} />, iconArrow: <AiOutlineArrowRight className={styles.arrowright} /> },
     // { titel: "Trading Bots", desc: "Trade Smarter with your various automated startegies-easy, fast and reliable", iconFirst: <PaperFinance className={styles.paperfinance} />, iconArrow: <AiOutlineArrowRight className={styles.arrowright} /> },
     // { titel: "P2P", desc: "Bank Trasfer and 100+ options", iconFirst: <PaperFinance className={styles.paperfinance} />, iconArrow: <AiOutlineArrowRight className={styles.arrowright} /> },
     // { titel: "Swap Farming", desc: "Sawp to earn BNB", iconFirst: <PaperFinance className={styles.paperfinance} />, iconArrow: <AiOutlineArrowRight className={styles.arrowright} /> },

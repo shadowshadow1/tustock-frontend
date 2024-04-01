@@ -17,6 +17,7 @@
 div .submenu_li {
     padding: 2rem;
     width: 100%;
+    
 }
 div .submenu_li:hover {
     background-color: var(--primary-gray);
